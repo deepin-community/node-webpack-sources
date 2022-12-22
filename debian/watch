@@ -1,0 +1,5 @@
+version=3
+opts=\
+dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$//,\
+filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-webpack-sources-$1.tar.gz/ \
+ https://github.com/webpack/webpack-sources/tags?after=v2.0.0-beta.6 .*/archive/v?([\d\.]+).tar.gz

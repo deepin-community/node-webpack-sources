@@ -1,0 +1,56 @@
+node-webpack-sources (1.4.3-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata (already
+    present in machine-readable debian/copyright).
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Pirate Praveen ]
+  * New upstream version 1.1.0
+  * Bump Standards-Version to 4.5.1 (no changes needed)
+  * Use dh-sequence-nodejs
+  * Adjust tag page link for 1.x version
+  * New upstream version 1.4.3
+  * Add sourcemap-validator as test only component
+  * Update build dependencies and enable nocheck build profile
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 23 Dec 2020 00:30:17 +0530
+
+node-webpack-sources (1.1.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Switch install to pkg-js-tools
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 03 Aug 2019 15:44:23 +0200
+
+node-webpack-sources (1.1.0-1) unstable; urgency=medium
+
+  [ Pirate Praveen ]
+  * New upstream release
+  * Tighten dependencies, bump standards, change section
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.0
+  * Add debian/gbp.conf
+  * Move installed files to /usr/share/nodejs
+  * Add upstream/metadata
+  * Update VCS fields to salsa.d.o
+  * Switch test to pkg-js-tools
+  * Update debian/copyright
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 27 Jul 2019 13:54:30 +0200
+
+node-webpack-sources (1.0.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 23 Aug 2017 20:11:35 +0530
+
+node-webpack-sources (0.2.3-1) unstable; urgency=low
+
+  * Initial release (Closes: #861963)
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 06 May 2017 23:13:44 +0530

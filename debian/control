@@ -1,0 +1,38 @@
+Source: node-webpack-sources
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 12)
+ , dh-sequence-nodejs
+ , nodejs
+ , mocha <!nocheck>
+ , node-should <!nocheck>
+ , node-source-map (>= 0.6.1) <!nocheck>
+ , node-source-list-map <!nocheck>
+ , node-lodash-packages <!nocheck>
+ , node-jsesc <!nocheck>
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-webpack-sources
+Vcs-Git: https://salsa.debian.org/js-team/node-webpack-sources.git
+Homepage: https://github.com/webpack/webpack-sources#readme
+
+Package: node-webpack-sources
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+ , node-source-map (>= 0.6.1)
+ , node-source-list-map
+Description: Source code handling classes for webpack
+ This library contains multiple classes which represent a `Source`. A `Source`
+ can be asked for source code, size, source map and hash.
+ .
+ This library is a dependency for webpack. Webpack takes code targeted at
+ node.js and makes it run in the browser. Node.js comes with API of its own
+ that is not available in the browsers. Webpack exposes this code
+ to programs that are unaware they are running in a browser.
+ .
+ Node.js is an event-based server-side JavaScript engine.
