@@ -1,3 +1,68 @@
+node-webpack-sources (3.2.3+~3.2.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Add patch for jest >= 29 (Closes: #1022396)
+
+ -- Yadd <yadd@debian.org>  Sun, 23 Oct 2022 18:39:31 +0200
+
+node-webpack-sources (3.2.3+~3.2.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Drop dependency to nodejs
+  * Embed typescript declarations
+  * New upstream version 3.2.3+~3.2.0
+
+ -- Yadd <yadd@debian.org>  Thu, 01 Sep 2022 16:33:52 +0200
+
+node-webpack-sources (3.2.1-5) unstable; urgency=medium
+
+  * Add Breaks: node-mini-css-extract-plugin (<< 2.0~)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 29 May 2022 17:55:46 +0530
+
+node-webpack-sources (3.2.1-4) unstable; urgency=medium
+
+  * Add lib/helpers/__mocks__ to debian/tests/pkg-js/files
+  * Install lib/helpers/__mocks__ (adding to debian/tests/pkg-js/files didn't
+    work) (Closes: #1011973)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 29 May 2022 01:54:55 +0530
+
+node-webpack-sources (3.2.1-3) unstable; urgency=medium
+
+  * Add Breaks: webpack (<< 5.0~)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 22 May 2022 22:37:32 +0530
+
+node-webpack-sources (3.2.1-2) unstable; urgency=medium
+
+  * Reupload to unstable
+  * Bump Standards-Version to 4.6.1 (no changes needed)
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 20 May 2022 22:12:28 +0530
+
+node-webpack-sources (3.2.1-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster
+
+  [ Yadd ]
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.6.0, no changes needed.
+  * Add "Rules-Requires-Root: no"
+  * Modernize debian/watch
+  * Fix filenamemangle
+  * Fix GitHub tags regex
+  * New upstream version 3.2.1
+  * Add lintian overrides
+  * Update test, replace mocha by jest
+  * Update copyright
+  * Clean test files
+
+ -- Yadd <yadd@debian.org>  Tue, 19 Oct 2021 14:52:03 +0200
+
 node-webpack-sources (1.4.3-1) unstable; urgency=medium
 
   [ Debian Janitor ]

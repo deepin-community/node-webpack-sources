@@ -1,31 +1,26 @@
 Source: node-webpack-sources
+Section: javascript
+Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Pirate Praveen <praveen@debian.org>
-Section: javascript
-Testsuite: autopkgtest-pkg-nodejs
-Priority: optional
-Build-Depends:
- debhelper-compat (= 12)
+Build-Depends: debhelper-compat (= 13)
  , dh-sequence-nodejs
- , nodejs
- , mocha <!nocheck>
- , node-should <!nocheck>
- , node-source-map (>= 0.6.1) <!nocheck>
- , node-source-list-map <!nocheck>
- , node-lodash-packages <!nocheck>
- , node-jsesc <!nocheck>
-Standards-Version: 4.5.1
+ , jest <!nocheck>
+Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/js-team/node-webpack-sources
 Vcs-Git: https://salsa.debian.org/js-team/node-webpack-sources.git
-Homepage: https://github.com/webpack/webpack-sources#readme
+Homepage: https://github.com/webpack/webpack-sources
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
 
 Package: node-webpack-sources
 Architecture: all
-Depends:
- ${misc:Depends}
- , nodejs
- , node-source-map (>= 0.6.1)
- , node-source-list-map
+Depends: node-source-list-map
+ , node-source-map
+ , ${misc:Depends}
+Breaks: node-mini-css-extract-plugin (<< 2.0~)
+ , webpack (<< 5.0~)
+Provides: ${nodejs:Provides}
 Description: Source code handling classes for webpack
  This library contains multiple classes which represent a `Source`. A `Source`
  can be asked for source code, size, source map and hash.
