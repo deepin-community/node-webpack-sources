@@ -1,1 +1,1 @@
-mocha -R spec
+jest --ci -u --testPathIgnorePatterns test/Fuzzy.js

@@ -2,6 +2,7 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: webpack-sources
 Upstream-Contact: https://github.com/webpack/webpack-sources/issues
 Source: https://github.com/webpack/webpack-sources#readme
+ https://registry.npmjs.org/@types/webpack-sources
 
 Files: *
 Copyright: 2017 JS Foundation and other contributors
@@ -9,11 +10,21 @@ License: Expat
 
 Files: debian/*
 Copyright: 2017 Pirate Praveen <praveen@debian.org>
- 2019, Xavier Guimard <yadd@debian.org>
+ 2019, Yadd <yadd@debian.org>
 License: Expat
 
 Files: debian/tests/test_modules/sourcemap-validator/*
 Copyright: 2013 Ben Ng
+License: Expat
+
+Files: test/fixtures/es6-promise.*
+Copyright: 2014 Yehuda Katz
+ 2014 Tom Dale
+ 2014 Stefan Penner
+License: Expat
+
+Files: types-*/*
+Copyright: Microsoft Corporation
 License: Expat
 
 License: Expat

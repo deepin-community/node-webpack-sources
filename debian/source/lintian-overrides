@@ -1,0 +1,11 @@
+# Unused test file
+source-is-missing *test/Fuzzy.js*
+source-contains-prebuilt-javascript-object *test/Fuzzy.js*
+very-long-line-length-in-source-file *test/Fuzzy.js*
+
+# False positive
+very-long-line-length-in-source-file *test/__snapshots__/Fuzzy.js.snap*
+very-long-line-length-in-source-file *test/fixtures/es6-promise.map*
+
+# Generic types-* path
+add-component-copyright types-*
